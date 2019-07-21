@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 
 <html>
+  
 	<head>
 		<title></title>
 
@@ -13,8 +14,35 @@
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
 	</head>
+  <style>
+   
+    body {
+      height: 100%;
+      padding: 0;
+    }
+  .flex-container {
+    display: flex;
+    background-color: purple;
+    height: 75vw;
+    align-items: stretch;
+  }
+    
+    .flex-container > div {
+        background-color: orange;
+        margin: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        
+        width: 31%;
+        font-size: 30px;
+    }
+  </style>
 	<body>
 		<!-- Your layout here -->
-
+      <div class = "flex-container">
+        <div> </div>
+        <div> </div>
+        <div> </div>
+    </div>
 	</body>
 </html>

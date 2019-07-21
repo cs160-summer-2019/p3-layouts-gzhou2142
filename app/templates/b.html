@@ -13,8 +13,35 @@
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
 	</head>
+  <style>
+    body {
+      padding: 0;
+      
+    }
+    .container {
+      padding-top: 7px;
+      display:flex;
+      flex-direction: column;
+      max-width: 1366px;
+      max-height: 1024px;
+      background-color: purple;
+      height: 75vw;
+      align-items: stretch;
+    }
+    .container > div {
+      background-color: orange;
+      height: 31%;
+      margin: 10px;
+      padding:5px;
+    }
+
+  </style>
 	<body>
 		<!-- Your layout here -->
-
+      <div class = "container">
+        <div class = "first"></div>
+        <div></div>
+        <div></div>
+    </div>
 	</body>
 </html>
